@@ -1,0 +1,23 @@
+.leaderBoardTableContainer {
+    background-color: #305685;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leaderboardEntryContainer:hover {
+    background-color: #204673;
+}
+
+.tableHeader, .tableRow, .leaderboardEntryContainer {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 2fr; /* adjust proportions as needed */
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+}
+
+.tableHeader {
+    background-color: gray;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
