@@ -1,23 +1,36 @@
-.leaderBoardTableContainer {
-    background-color: #305685;
+.tableContainer {
     border-radius: 10px;
+    box-shadow: 0px 10px 20px black;
+    background-color: #342d3c;
+    background-image: linear-gradient(160deg, #332c3b 0%, #30547e 100%);
+}
+
+.leaderBoardTableContainer {
+    border-radius: 0 0 10px 10px;
     overflow: hidden;
 }
 
 .leaderboardEntryContainer:hover {
-    background-color: #204673;
+    background-color: rgba(49, 87, 134, 0.23);
+}
+
+.leaderboardEntryContainer {
+    align-items: center;
 }
 
 .tableHeader, .tableRow, .leaderboardEntryContainer {
     display: grid;
-    grid-template-columns: 1fr 0.5fr 2fr; /* adjust proportions as needed */
+    grid-template-columns: 1fr 0.5fr 2fr 1fr; /* adjust proportions as needed */
     text-align: left;
-    padding: 10px 10px 10px 20px;
+    padding: 20px
 }
 
 .tableHeader {
-    background-color: gray;
+    background-color: rgb(51, 44, 59, 0.20);
     font-weight: 800;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.formEntry {
+    display: flex;
 }

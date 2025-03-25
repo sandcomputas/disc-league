@@ -1,0 +1,11 @@
+.formEntry {
+    background-color: black;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 2px;
+    font-size: 15px;
+}

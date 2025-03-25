@@ -14,20 +14,21 @@ function LeaderboardTable() {
     if (isPending) return 'Loading'
     if (error) return 'An error has occured: ' + error.message
     return (
-        <>
-            <div className={styles["tableHeader"]}>
+        <div className={styles.tableContainer}>
+            <div className={styles.tableHeader}>
                 <div>Position</div>
                 <div>Name</div>
                 <div>Other...</div>
+                <div>Form</div>
             </div>
-            <div className={styles["leaderBoardTableContainer"]}>
+            <div className={styles.leaderBoardTableContainer}>
                 {data.map((r) => (
                     <div key={r.position}>
                         <LeaderboardTableEntry leaderboardEntry={r}/>
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 
