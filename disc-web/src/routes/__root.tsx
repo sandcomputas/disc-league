@@ -4,6 +4,7 @@ import {TanStackRouterDevtools} from '@tanstack/router-devtools'
 import styles from './root.module.css'
 // @ts-ignore
 import image from "@/assets/logo.png"
+import {RegisterNewRoundBtn} from "@/components/RegisterNewRoundBtn/RegisterNewRoundBtn.tsx";
 
 
 export const Route = createRootRoute({
@@ -20,6 +21,7 @@ function RootComponent() {
             <div className={styles["outletContainer"]}>
                 <Outlet/>
             </div>
+            <RegisterNewRoundBtn/>
             <TanStackRouterDevtools position="bottom-right"/>
         </>
     )
