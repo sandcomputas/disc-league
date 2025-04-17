@@ -1,26 +1,3 @@
 .headerContainer {
     text-align: center;
 }
-
-.navbarContainer {
-    margin: 10px;
-}
-
-.navbarButton {
-    margin: 10px;
-    border-radius: 5px;
-    background-color: #315786;
-    padding: 10px;
-    /*border: 2px solid;*/
-    border: none;
-    color: white;
-    text-decoration: none;
-}
-
-.navbarButton:hover {
-    background-color: #475e84;
-}
-
-.active {
-    background-color: #0d3e7d;
-}
